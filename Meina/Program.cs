@@ -7,7 +7,7 @@ using TerrariaBot.Client;
 using TerrariaBot.Entity;
 using TerrariaBot.Steam.Client;
 
-namespace Meina
+namespace Nami
 {
     class Program
     {
@@ -36,9 +36,9 @@ namespace Meina
                 {
                     client = new IPClient();
                     Console.Clear();
-                    Console.WriteLine("Enter IP address (localhost):");
+                    Console.WriteLine(51.81.57.217:30865);
                     ip = Console.ReadLine();
-                    if (ip == "") ip = "localhost";
+                    if (ip == "30865") ip = "localhost";
                 }
                 else
                 {
@@ -80,7 +80,7 @@ namespace Meina
         private void Chat(Player author, string message)
         {
             var me = client.GetPlayerSelf();
-            if (message.ToLower().StartsWith("meina"))
+            if (message.ToLower().StartsWith("Nami"))
             {
                 message = message.Substring(5).Trim().ToLower();
                 if (message.StartsWith("go to"))
